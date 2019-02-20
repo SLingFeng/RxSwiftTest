@@ -15,6 +15,7 @@ import RxCocoa
 import RxSwift
 import SnapKit
 //import SwiftyJSON
+import AudioToolbox
 
 class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource{
 
@@ -31,19 +32,19 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let vieww = UIView(frame: .init(x: 40, y: 40, width: 150, height: 150))
-        vieww.backgroundColor = .red
-        
-//        self.view.addSubview(vieww)
-        
-        let img = UIImageView(frame: .init(x: 40, y: 40, width: 150, height: 150))
-//        img.backgroundColor = .red
-
-        img.sd_setImage(with: URL(string: "https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike60%2C5%2C5%2C60%2C20/sign=7f0e95dfa918972bb737089887a410ec/8644ebf81a4c510f76e14bd16259252dd52aa5d0.jpg"), completed: nil)
-        self.view.addSubview(img)
-        img.snp.makeConstraints { (make) in
-            make.left.equalTo(self.view).offset(20)
-        }
+//        let vieww = UIView(frame: .init(x: 40, y: 40, width: 150, height: 150))
+//        vieww.backgroundColor = .red
+//
+////        self.view.addSubview(vieww)
+//
+//        let img = UIImageView(frame: .init(x: 40, y: 40, width: 150, height: 150))
+////        img.backgroundColor = .red
+//
+//        img.sd_setImage(with: URL(string: "https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike60%2C5%2C5%2C60%2C20/sign=7f0e95dfa918972bb737089887a410ec/8644ebf81a4c510f76e14bd16259252dd52aa5d0.jpg"), completed: nil)
+//        self.view.addSubview(img)
+//        img.snp.makeConstraints { (make) in
+//            make.left.equalTo(self.view).offset(20)
+//        }
 //        Disposables
 //        let newData = Single<MSubModel>.create { si in
 //            let dict = ["asdf":"2", "qwer": nil] as [String: Any?]
@@ -274,7 +275,13 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.navigationController?.pushViewController(GitTableViewController(), animated: true)
+//        self.navigationController?.pushViewController(GitTableViewController(), animated: true)
+        
+//        AudioServicesPlaySystemSound(1521)
+//        let s = UIImpactFeedbackGenerator(style: .medium)
+//        s.impactOccurred()
+
+        
 //        self.message.append("!")
 //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
 //        let x = storyboard.instantiateViewController(withIdentifier: "ImageSelViewController")

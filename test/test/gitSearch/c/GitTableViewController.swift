@@ -108,7 +108,7 @@ class GitTableViewController: UIViewController{
 //            "\(arc4random())"
 //        }
 //        return Observable.just(items)
-        return viewModel!.repositories
+        return viewModel!.repositories.debug()
     }
 }
 

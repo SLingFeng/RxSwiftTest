@@ -22,15 +22,15 @@
 		182E46A32216629B00FEC332 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182E46A22216629B00FEC332 /* TableViewModel.swift */; };
 		182E46C32216986900FEC332 /* LFBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182E46C22216986900FEC332 /* LFBaseModel.swift */; };
 		182E46C72216C34C00FEC332 /* SLFHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E46C62216C34C00FEC332 /* SLFHUD.m */; };
+		189793BB221D4D1C00B5801C /* Pods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189793BA221D4D1C00B5801C /* Pods_test.framework */; };
 		18E8632E2212A35200F9A8DE /* MModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8632D2212A35200F9A8DE /* MModel.swift */; };
-		728D80DC218A2C48AF808413 /* Pods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36A1DB68805E2BC230A3944 /* Pods_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18062ED7221BEE850002908F /* GitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitTableViewController.swift; sourceTree = "<group>"; };
 		18062ED9221BF0A10002908F /* GitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitViewModel.swift; sourceTree = "<group>"; };
 		18062EDB221BF4980002908F /* GitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitModel.swift; sourceTree = "<group>"; };
-		1811137A22125CD200029DCA /* RXSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1811137A22125CD200029DCA /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1811137D22125CD200029DCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1811137F22125CD200029DCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1811138222125CD200029DCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,10 +46,14 @@
 		182E46C42216C34A00FEC332 /* test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-Bridging-Header.h"; sourceTree = "<group>"; };
 		182E46C52216C34B00FEC332 /* SLFHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLFHUD.h; sourceTree = "<group>"; };
 		182E46C62216C34C00FEC332 /* SLFHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLFHUD.m; sourceTree = "<group>"; };
+		189793BA221D4D1C00B5801C /* Pods_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E8632D2212A35200F9A8DE /* MModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MModel.swift; sourceTree = "<group>"; };
+		1A1DB860A6E12E8A1C30071A /* Pods-RXSwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSwiftTest.debug.xcconfig"; path = "Target Support Files/Pods-RXSwiftTest/Pods-RXSwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 		2AC033D7E239A3BC98CAC296 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
+		42D3580F66EC49E9D38833E5 /* Pods-RXSwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSwiftTest.release.xcconfig"; path = "Target Support Files/Pods-RXSwiftTest/Pods-RXSwiftTest.release.xcconfig"; sourceTree = "<group>"; };
 		4421D9F17AC332F36D443E16 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		C36A1DB68805E2BC230A3944 /* Pods_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67337B5AB655BBB8AF08180 /* Pods_RXSwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXSwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				728D80DC218A2C48AF808413 /* Pods_test.framework in Frameworks */,
+				189793BB221D4D1C00B5801C /* Pods_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +123,7 @@
 		1811137B22125CD200029DCA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1811137A22125CD200029DCA /* RXSwiftTest.app */,
+				1811137A22125CD200029DCA /* test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +157,8 @@
 			children = (
 				4421D9F17AC332F36D443E16 /* Pods-test.debug.xcconfig */,
 				2AC033D7E239A3BC98CAC296 /* Pods-test.release.xcconfig */,
+				1A1DB860A6E12E8A1C30071A /* Pods-RXSwiftTest.debug.xcconfig */,
+				42D3580F66EC49E9D38833E5 /* Pods-RXSwiftTest.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -160,7 +166,9 @@
 		6DDCB6B4D5CCF199E01A152A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				189793BA221D4D1C00B5801C /* Pods_test.framework */,
 				C36A1DB68805E2BC230A3944 /* Pods_test.framework */,
+				E67337B5AB655BBB8AF08180 /* Pods_RXSwiftTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,9 +176,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1811137922125CD100029DCA /* RXSwiftTest */ = {
+		1811137922125CD100029DCA /* test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1811138C22125CD200029DCA /* Build configuration list for PBXNativeTarget "RXSwiftTest" */;
+			buildConfigurationList = 1811138C22125CD200029DCA /* Build configuration list for PBXNativeTarget "test" */;
 			buildPhases = (
 				A3D0DC2A580B65165DF2A701 /* [CP] Check Pods Manifest.lock */,
 				1811137622125CD100029DCA /* Sources */,
@@ -182,9 +190,9 @@
 			);
 			dependencies = (
 			);
-			name = RXSwiftTest;
+			name = test;
 			productName = test;
-			productReference = 1811137A22125CD200029DCA /* RXSwiftTest.app */;
+			productReference = 1811137A22125CD200029DCA /* test.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -203,7 +211,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1811137522125CD100029DCA /* Build configuration list for PBXProject "RXSwiftTest" */;
+			buildConfigurationList = 1811137522125CD100029DCA /* Build configuration list for PBXProject "test" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,7 +224,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1811137922125CD100029DCA /* RXSwiftTest */,
+				1811137922125CD100029DCA /* test */,
 			);
 		};
 /* End PBXProject section */
@@ -493,6 +501,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L2X46NB83H;
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -514,6 +523,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L2X46NB83H;
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -530,7 +540,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1811137522125CD100029DCA /* Build configuration list for PBXProject "RXSwiftTest" */ = {
+		1811137522125CD100029DCA /* Build configuration list for PBXProject "test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1811138A22125CD200029DCA /* Debug */,
@@ -539,7 +549,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1811138C22125CD200029DCA /* Build configuration list for PBXNativeTarget "RXSwiftTest" */ = {
+		1811138C22125CD200029DCA /* Build configuration list for PBXNativeTarget "test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1811138D22125CD200029DCA /* Debug */,
