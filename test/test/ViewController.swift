@@ -275,7 +275,7 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        self.navigationController?.pushViewController(GitTableViewController(), animated: true)
+        self.navigationController?.pushViewController(MyBaseViewController(), animated: true)
         
 //        AudioServicesPlaySystemSound(1521)
 //        let s = UIImpactFeedbackGenerator(style: .medium)

@@ -24,6 +24,7 @@
 		182E46C72216C34C00FEC332 /* SLFHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E46C62216C34C00FEC332 /* SLFHUD.m */; };
 		189793BB221D4D1C00B5801C /* Pods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189793BA221D4D1C00B5801C /* Pods_test.framework */; };
 		18E8632E2212A35200F9A8DE /* MModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8632D2212A35200F9A8DE /* MModel.swift */; };
+		18FFB72D221E8ECD00EA5DB0 /* MyBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FFB72C221E8ECD00EA5DB0 /* MyBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		182E46C62216C34C00FEC332 /* SLFHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLFHUD.m; sourceTree = "<group>"; };
 		189793BA221D4D1C00B5801C /* Pods_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E8632D2212A35200F9A8DE /* MModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MModel.swift; sourceTree = "<group>"; };
+		18FFB72B221E8ECD00EA5DB0 /* MyBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBaseViewController.h; sourceTree = "<group>"; };
+		18FFB72C221E8ECD00EA5DB0 /* MyBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBaseViewController.m; sourceTree = "<group>"; };
 		1A1DB860A6E12E8A1C30071A /* Pods-RXSwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSwiftTest.debug.xcconfig"; path = "Target Support Files/Pods-RXSwiftTest/Pods-RXSwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 		2AC033D7E239A3BC98CAC296 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		42D3580F66EC49E9D38833E5 /* Pods-RXSwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSwiftTest.release.xcconfig"; path = "Target Support Files/Pods-RXSwiftTest/Pods-RXSwiftTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 				18062ED2221BEE2F0002908F /* gitSearch */,
 				1811137D22125CD200029DCA /* AppDelegate.swift */,
 				1811137F22125CD200029DCA /* ViewController.swift */,
+				18FFB72B221E8ECD00EA5DB0 /* MyBaseViewController.h */,
+				18FFB72C221E8ECD00EA5DB0 /* MyBaseViewController.m */,
 				1811138122125CD200029DCA /* Main.storyboard */,
 				1811138422125CD200029DCA /* Assets.xcassets */,
 				1811138622125CD200029DCA /* LaunchScreen.storyboard */,
@@ -347,6 +352,7 @@
 				18062ED8221BEE850002908F /* GitTableViewController.swift in Sources */,
 				18E8632E2212A35200F9A8DE /* MModel.swift in Sources */,
 				1811137E22125CD200029DCA /* AppDelegate.swift in Sources */,
+				18FFB72D221E8ECD00EA5DB0 /* MyBaseViewController.m in Sources */,
 				182E46A1221660A900FEC332 /* ApiManager.swift in Sources */,
 				182E46C72216C34C00FEC332 /* SLFHUD.m in Sources */,
 				18062EDA221BF0A10002908F /* GitViewModel.swift in Sources */,

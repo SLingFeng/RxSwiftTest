@@ -23,6 +23,8 @@ class GitTableViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        let item = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+//        self.navigationItem.backBarButtonItem = item;
 
         self.tableView = UITableView(frame:self.view.frame, style:.plain)
         self.view.addSubview(self.tableView!)
