@@ -16,7 +16,7 @@ pod 'RxCocoa'
 pod 'RxDataSources', '~> 3.1.0'
 pod 'Moya/RxSwift'
 pod 'NSObject+Rx'
-
+pod 'Google-Mobile-Ads-SDK'
 
 
 pod 'JSONModel'

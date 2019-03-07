@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1801697D2228FC390052AB50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801697C2228FC390052AB50 /* AppDelegate.swift */; };
+		1801697F2228FC390052AB50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801697E2228FC390052AB50 /* ViewController.swift */; };
+		180169822228FC390052AB50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180169802228FC390052AB50 /* Main.storyboard */; };
+		180169842228FC3C0052AB50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180169832228FC3C0052AB50 /* Assets.xcassets */; };
+		180169872228FC3C0052AB50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180169852228FC3C0052AB50 /* LaunchScreen.storyboard */; };
+		1801698D2228FEE60052AB50 /* ToneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801698C2228FEE60052AB50 /* ToneView.swift */; };
 		18062ED8221BEE850002908F /* GitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18062ED7221BEE850002908F /* GitTableViewController.swift */; };
 		18062EDA221BF0A10002908F /* GitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18062ED9221BF0A10002908F /* GitViewModel.swift */; };
 		18062EDC221BF4980002908F /* GitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18062EDB221BF4980002908F /* GitModel.swift */; };
@@ -28,6 +34,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1801697A2228FC390052AB50 /* tone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1801697C2228FC390052AB50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1801697E2228FC390052AB50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		180169812228FC390052AB50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		180169832228FC3C0052AB50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		180169862228FC3C0052AB50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		180169882228FC3C0052AB50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1801698C2228FEE60052AB50 /* ToneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneView.swift; sourceTree = "<group>"; };
 		18062ED7221BEE850002908F /* GitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitTableViewController.swift; sourceTree = "<group>"; };
 		18062ED9221BF0A10002908F /* GitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitViewModel.swift; sourceTree = "<group>"; };
 		18062EDB221BF4980002908F /* GitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitModel.swift; sourceTree = "<group>"; };
@@ -60,6 +74,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		180169772228FC390052AB50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1811137722125CD100029DCA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,6 +92,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1801697B2228FC390052AB50 /* tone */ = {
+			isa = PBXGroup;
+			children = (
+				1801697C2228FC390052AB50 /* AppDelegate.swift */,
+				1801697E2228FC390052AB50 /* ViewController.swift */,
+				180169802228FC390052AB50 /* Main.storyboard */,
+				180169832228FC3C0052AB50 /* Assets.xcassets */,
+				180169852228FC3C0052AB50 /* LaunchScreen.storyboard */,
+				180169882228FC3C0052AB50 /* Info.plist */,
+				1801698C2228FEE60052AB50 /* ToneView.swift */,
+			);
+			path = tone;
+			sourceTree = "<group>";
+		};
 		18062ED2221BEE2F0002908F /* gitSearch */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				1811137C22125CD200029DCA /* test */,
+				1801697B2228FC390052AB50 /* tone */,
 				1811137B22125CD200029DCA /* Products */,
 				421A9D71518874471D18549B /* Pods */,
 				6DDCB6B4D5CCF199E01A152A /* Frameworks */,
@@ -127,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				1811137A22125CD200029DCA /* test.app */,
+				1801697A2228FC390052AB50 /* tone.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,6 +218,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		180169792228FC390052AB50 /* tone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1801698B2228FC3C0052AB50 /* Build configuration list for PBXNativeTarget "tone" */;
+			buildPhases = (
+				180169762228FC390052AB50 /* Sources */,
+				180169772228FC390052AB50 /* Frameworks */,
+				180169782228FC390052AB50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tone;
+			productName = tone;
+			productReference = 1801697A2228FC390052AB50 /* tone.app */;
+			productType = "com.apple.product-type.application";
+		};
 		1811137922125CD100029DCA /* test */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1811138C22125CD200029DCA /* Build configuration list for PBXNativeTarget "test" */;
@@ -210,6 +264,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = big;
 				TargetAttributes = {
+					180169792228FC390052AB50 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					1811137922125CD100029DCA = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
@@ -230,11 +287,22 @@
 			projectRoot = "";
 			targets = (
 				1811137922125CD100029DCA /* test */,
+				180169792228FC390052AB50 /* tone */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		180169782228FC390052AB50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180169872228FC3C0052AB50 /* LaunchScreen.storyboard in Resources */,
+				180169842228FC3C0052AB50 /* Assets.xcassets in Resources */,
+				180169822228FC390052AB50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1811137822125CD100029DCA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,6 +409,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		180169762228FC390052AB50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1801698D2228FEE60052AB50 /* ToneView.swift in Sources */,
+				1801697F2228FC390052AB50 /* ViewController.swift in Sources */,
+				1801697D2228FC390052AB50 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1811137622125CD100029DCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -365,6 +443,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		180169802228FC390052AB50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180169812228FC390052AB50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		180169852228FC3C0052AB50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180169862228FC3C0052AB50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		1811138122125CD200029DCA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -384,6 +478,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		180169892228FC3C0052AB50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.big.tone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1801698A2228FC3C0052AB50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.big.tone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		1811138A22125CD200029DCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -546,6 +674,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1801698B2228FC3C0052AB50 /* Build configuration list for PBXNativeTarget "tone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180169892228FC3C0052AB50 /* Debug */,
+				1801698A2228FC3C0052AB50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1811137522125CD100029DCA /* Build configuration list for PBXProject "test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

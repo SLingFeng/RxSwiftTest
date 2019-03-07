@@ -14,7 +14,7 @@ import ReactiveSwift
 import RxCocoa
 import RxSwift
 import SnapKit
-//import SwiftyJSON
+import GoogleMobileAds
 import AudioToolbox
 
 class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource{
@@ -32,16 +32,42 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
 
+//        let v = ((Bool, String?) -> Int).self
+        let x = {(x: Int) ->  Int in
+            return x/2
+        }
+        
+         print(x(4))
+        
+//        let n = NSDecimalNumber(string: "11")
+//        let num = n.raising(toPower: 111)
+//        print(num)
+//        let bun = Bundle.main.n
+        
+//        let bannerView = GADBannerView(adSize: kGADAdSizeBanner, origin: CGPoint.init(x: 50, y: 500))
+//        self.view.addSubview(bannerView)
+//        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"//"ca-app-pub-3606599579948541/4674057005"
+//
+//        bannerView.rootViewController = self
+//        bannerView.load(GADRequest())
+
 //        let vieww = UIView(frame: .init(x: 40, y: 40, width: 150, height: 150))
+//                self.view.addSubview(vieww)
+//        UIView.animate(withDuration: 6, animations: {
+//            vieww.alpha = 0
+//        }) { (_) in
+//            vieww.removeFromSuperview()
+//        }
 //        vieww.backgroundColor = .red
 //
-////        self.view.addSubview(vieww)
+
 //
 //        let img = UIImageView(frame: .init(x: 40, y: 40, width: 150, height: 150))
 ////        img.backgroundColor = .red
 //
 //        img.sd_setImage(with: URL(string: "https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike60%2C5%2C5%2C60%2C20/sign=7f0e95dfa918972bb737089887a410ec/8644ebf81a4c510f76e14bd16259252dd52aa5d0.jpg"), completed: nil)
 //        self.view.addSubview(img)
+
 //        img.snp.makeConstraints { (make) in
 //            make.left.equalTo(self.view).offset(20)
 //        }
@@ -264,6 +290,13 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
 //        AnyObserver
         
     }
+    
+    func changeValues<T>(_ a:inout T, _ b:inout T)  {
+        let temporaryA = a
+        a = b
+        b = temporaryA
+    }
+    
     @objc func buttonTapped() {
         print("button Tapped")
     }
@@ -275,7 +308,7 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.navigationController?.pushViewController(MyBaseViewController(), animated: true)
+        self.navigationController?.pushViewController(TableViewViewController(), animated: true)
         
 //        AudioServicesPlaySystemSound(1521)
 //        let s = UIImpactFeedbackGenerator(style: .medium)

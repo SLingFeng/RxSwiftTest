@@ -64,8 +64,8 @@ class TableViewViewController: UIViewController, UITableViewDelegate, UITableVie
 ////            let m = Observable.from(optional: model)
 ////           m.bind(to: tableView.rx.items(dataSource: dataSource)).disposed(by: DisposeBag())
 ////            m.bind(to: tableView.rx.items(dataSource: dataSource)).disposed(by: DisposeBag())
-//            self!.dataModel = model
-//            self!.tableView.reloadData()
+//            self.dataModel = model
+//            self.tableView.reloadData()
         }, onError: { Error in
             print(Error)
         })
@@ -99,7 +99,7 @@ class TableViewViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (self.dataModel?.results.count == 0 || self.dataModel == nil) {
-            return 0
+            return 10
         }
         return (self.dataModel?.results.count)!
     }
@@ -108,12 +108,23 @@ class TableViewViewController: UIViewController, UITableViewDelegate, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
         
         let m = dataModel?.results[indexPath.row]
-        cell.textLabel?.text =  m?.trackName
+        cell.textLabel?.text =  "2"//m?.trackName
         
         return cell
     }
-    
-    
+    //设置cell的显示动画
+//    func tableView(tableView: UITableView!, willDisplayCell cell: UITableViewCell!,
+//                   forRowAtIndexPath indexPath: NSIndexPath!){
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+            
+        //设置cell的显示动画为3D缩放
+        //xy方向缩放的初始值为0.1
+        cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1)
+        //设置动画时间为0.25秒，xy方向缩放的最终值为1
+        UIView.animate(withDuration: 0.25, animations: {
+            cell.layer.transform=CATransform3DMakeScale(1, 1, 1)
+        })
+    }
     func getData() -> Single<qwModel> {
         
         return Single<qwModel>.create{ single in

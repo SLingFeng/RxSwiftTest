@@ -4,6 +4,7 @@ PODS:
   - CYLTabBarController (1.17.22)
   - Differentiator (3.1.0)
   - DZNEmptyDataSet (1.8.1)
+  - Google-Mobile-Ads-SDK (7.39.0)
   - HandyJSON (4.2.1)
   - IQKeyboardManager (5.0.6)
   - JSONModel (1.7.0)
@@ -46,6 +47,7 @@ DEPENDENCIES:
   - Bugly
   - CYLTabBarController (~> 1.17.13)
   - DZNEmptyDataSet
+  - Google-Mobile-Ads-SDK
   - HandyJSON
   - IQKeyboardManager
   - JSONModel
@@ -70,6 +72,7 @@ SPEC REPOS:
     - CYLTabBarController
     - Differentiator
     - DZNEmptyDataSet
+    - Google-Mobile-Ads-SDK
     - HandyJSON
     - IQKeyboardManager
     - JSONModel
@@ -97,6 +100,7 @@ SPEC CHECKSUMS:
   CYLTabBarController: 35784c2969383583d11cc56ff5abce078f19d94a
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  Google-Mobile-Ads-SDK: d0f10a7c4d7015db23075ff316602350d12049db
   HandyJSON: d0c5fc80204f29056d59d3e5c4587fa0b16b60a8
   IQKeyboardManager: 077b7f691dfa9d69db9cff66f2bed68ebfc02d9b
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
@@ -118,6 +122,6 @@ SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   WPAttributedMarkup: eb50878af4ec647d8d2090f721a5cfe7d29c27fe
 
-PODFILE CHECKSUM: c3525a95e25e701d456ee598dfb2ce28ed5fd1e5
+PODFILE CHECKSUM: da2353e26ebae346a28de02f2a87da196c06bcda
 
 COCOAPODS: 1.6.0
