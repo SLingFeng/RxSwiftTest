@@ -97,11 +97,96 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
 //            _ = intSequence
 //                .subscribe(onNext: { print("Subscription 2:, Event: \($0)") })
 //        }
+//        let btn = UIButton(type: .system)
+//        btn.frame = .init(x: 50, y: 430, width: 100, height: 50)
+//        self.view.addSubview(btn)
+//        btn.backgroundColor = .red
+        //        btn.rx.tap.asDriver().drive({ _ in
+        //            print("wwww")
+        //        })
+        //        btn.rx.tap
+        //            .subscribe(onNext: {  _ in
+        //            print("wqe")
+        //            })
+        //            .disposed(by: DisposeBag())
+//        btn.rx.tap.asObservable()
+//            .subscribe({ (_) in
+//                print("button Tapped")
+//            }).disposed(by: disposeBag)
         
-        
-        passwordOutlet = UITextField(frame: .init(x: 50, y: 200, width: 200, height: 60))
+        passwordOutlet = UITextField(frame: .init(x: 50, y: 100, width: 200, height: 30))
         passwordOutlet?.backgroundColor = .red
         self.view.addSubview(passwordOutlet!)
+        
+        let label = UILabel(frame: CGRect.init(x: 50, y: 150, width: 200, height: 30))
+        self.view.addSubview(label)
+        label.backgroundColor = .blue
+        
+        passwordOutlet!.rx.text.bind(to: label.rx.text).disposed(by: disposeBag)
+        passwordOutlet!.rx.text.onNext("1234")
+        passwordOutlet!.sendActions(for: .allEditingEvents)
+        
+//        passwordOutlet!.rx.text.orEmpty.map { (s) -> Bool in
+//            return s.count > 6
+//        }.bind(to: btn.rx.isEnabled).disposed(by: disposeBag)
+        
+        let btn = UIButton(type: .system)
+        btn.frame = .init(x: 50, y: 430, width: 100, height: 50)
+        self.view.addSubview(btn)
+        btn.backgroundColor = .blue
+        
+        btn.rx.tap.subscribe(onNext: { (_) in
+            btn.isSelected = !btn.isSelected
+        }).disposed(by: disposeBag)
+        
+        let btnSel = Variable<Bool>(false)
+        let bbb = PublishSubject<Bool>()//Observable.of(false)
+        
+        btnSel.asObservable().bind(to: btn.rx.isSelected).disposed(by: disposeBag)
+        
+        btnSel.asObservable().subscribe(onNext: { (b) in
+            print(b)
+        }, onError: { (e) in
+            
+        }, onCompleted: {
+            
+        }) {
+            
+            }.disposed(by: disposeBag)
+        
+        bbb.subscribe(onNext: { (b) in
+            
+        }, onError: { (e) in
+            print(e)
+        }, onCompleted: {
+            print("com")
+        }) {
+            print("dis")
+        }
+        
+//        bbb.bind(to: btn.rx.isSelected).disposed(by: disposeBag)
+//        bbb.subscribe(onNext: { (b) in
+//            print(b)
+//        }, onError: { (e) in
+//
+//        }, onCompleted: {
+//
+//        }) {
+//
+//        }.disposed(by: disposeBag)
+        
+        
+        
+//        btnSel.flatMap { (sel) -> Observable<> in
+//            if sel {
+//                //执行密码账号验证
+//                return
+//            }
+//        }
+        
+//         x. btn.rx.isSelected
+//        let arr = [""]
+//        arr.lazy.map/
 //        newData.subscribe(onSuccess: { (model) in
 ////            print(model)
 //            self.passwordOutlet?.text = model.asdf
@@ -128,22 +213,7 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
 //        ) { $0 && $1 } // 取用户名和密码同时有效
 //            .share(replay: 1)
 //
-        let btn = UIButton(type: .system)
-        btn.frame = .init(x: 50, y: 430, width: 100, height: 50)
-        self.view.addSubview(btn)
-        btn.backgroundColor = .red
-//        btn.rx.tap.asDriver().drive({ _ in
-//            print("wwww")
-//        })
-//        btn.rx.tap
-//            .subscribe(onNext: {  _ in
-//            print("wqe")
-//            })
-//            .disposed(by: DisposeBag())
-        btn.rx.tap.asObservable()
-            .subscribe({ (_) in
-                print("button Tapped")
-            }).disposed(by: disposeBag)
+        
 //        btn.addTarget(self, action: #selector(self.buttonTapped), for: .touchUpInside)
 
         
@@ -308,7 +378,7 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.navigationController?.pushViewController(TableViewViewController(), animated: true)
+//        self.navigationController?.pushViewController(TableViewViewController(), animated: true)
         
 //        AudioServicesPlaySystemSound(1521)
 //        let s = UIImpactFeedbackGenerator(style: .medium)

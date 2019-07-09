@@ -5,7 +5,7 @@ PODS:
   - Differentiator (3.1.0)
   - DZNEmptyDataSet (1.8.1)
   - Google-Mobile-Ads-SDK (7.39.0)
-  - HandyJSON (4.2.1)
+  - HandyJSON (5.0.0-beta.1)
   - IQKeyboardManager (5.0.6)
   - JSONModel (1.7.0)
   - MBProgressHUD (1.1.0)
@@ -48,7 +48,7 @@ DEPENDENCIES:
   - CYLTabBarController (~> 1.17.13)
   - DZNEmptyDataSet
   - Google-Mobile-Ads-SDK
-  - HandyJSON
+  - HandyJSON (from `https://github.com/alibaba/HandyJSON.git`, branch `dev_for_swift5.0`)
   - IQKeyboardManager
   - JSONModel
   - MBProgressHUD
@@ -73,7 +73,6 @@ SPEC REPOS:
     - Differentiator
     - DZNEmptyDataSet
     - Google-Mobile-Ads-SDK
-    - HandyJSON
     - IQKeyboardManager
     - JSONModel
     - MBProgressHUD
@@ -94,6 +93,16 @@ SPEC REPOS:
     - SnapKit
     - WPAttributedMarkup
 
+EXTERNAL SOURCES:
+  HandyJSON:
+    :branch: dev_for_swift5.0
+    :git: https://github.com/alibaba/HandyJSON.git
+
+CHECKOUT OPTIONS:
+  HandyJSON:
+    :commit: a2ba4e537711ae1fcd9183679c4db878eb171a78
+    :git: https://github.com/alibaba/HandyJSON.git
+
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
@@ -101,7 +110,7 @@ SPEC CHECKSUMS:
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Google-Mobile-Ads-SDK: d0f10a7c4d7015db23075ff316602350d12049db
-  HandyJSON: d0c5fc80204f29056d59d3e5c4587fa0b16b60a8
+  HandyJSON: 582477127ab3ab65bd2e471815f1a7b846856978
   IQKeyboardManager: 077b7f691dfa9d69db9cff66f2bed68ebfc02d9b
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
@@ -122,6 +131,6 @@ SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   WPAttributedMarkup: eb50878af4ec647d8d2090f721a5cfe7d29c27fe
 
-PODFILE CHECKSUM: da2353e26ebae346a28de02f2a87da196c06bcda
+PODFILE CHECKSUM: 7be53b53dc3f07681cb8478f29d3afb4e7d4ef75
 
 COCOAPODS: 1.6.0
